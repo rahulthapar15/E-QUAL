@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">E-QUAL</string>
+    <string name="title_activity_activity_40">Activity_40</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_activity_43_46">Activity_43_46</string>
+    <string name="title_activity_activity_47_50">Activity_47_50</string>
+    <string name="title_activity_activity_51_53">Activity_51_53</string>
+    <string name="title_activity_activity_54">Activity_54</string>
+    <string name="title_activity_activity_55">Activity_55</string>
+</resources>
