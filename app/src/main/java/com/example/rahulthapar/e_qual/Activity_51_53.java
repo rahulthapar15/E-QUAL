@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -43,8 +44,10 @@ public class Activity_51_53 extends Activity {
                 public void onClick(View v) {
                     saveChoice();
                     pin = pinn.getText().toString();
-                    data = data + "#" + choice+"#" + choice1+"#" +pin ;
+                    data = data + "#" + choice + "#" + choice1 + "#" +pin ;
                     Toast.makeText(Activity_51_53.this, data, Toast.LENGTH_SHORT).show();
+                    Log.d("data", data);
+
                     Intent i = new Intent(Activity_51_53.this, Activity_54.class);
                     i.putExtra("data", data);
                     startActivity(i);

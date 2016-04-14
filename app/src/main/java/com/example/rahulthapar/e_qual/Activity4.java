@@ -24,7 +24,7 @@ public class Activity4 extends Activity {
 
 
         super.onCreate(savedInstanceState);
-        //data = getIntent().getStringExtra("data");
+        data = getIntent().getStringExtra("data");
         setContentView(R.layout.activity_4);
 
         rg = (RadioGroup) findViewById(R.id.radioGroup4);

@@ -56,6 +56,12 @@
                     android:layout_height="wrap_content"
                     android:text="Agriculture"
                     android:textColor="#000000" />
+                <RadioButton
+                    android:id="@+id/answer1D_act8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textColor="#000000" />
             </RadioGroup>
         </TableRow>
         <TableRow
@@ -104,7 +110,12 @@
                     android:layout_height="wrap_content"
                     android:text="Agriculture"
                     android:textColor="#000000" />
-
+                <RadioButton
+                    android:id="@+id/answer2D_act8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textColor="#000000" />
             </RadioGroup>
         </TableRow>
 

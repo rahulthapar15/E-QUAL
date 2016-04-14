@@ -83,8 +83,9 @@
                     android:id="@+id/answer2A_act15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="1 Hour"
-                    android:textColor="#000000" />
+                    android:text="1 Hour or less"
+                    android:textColor="#000000"
+                    android:checked="false" />
 
                 <RadioButton
                     android:id="@+id/answer2B_act15"

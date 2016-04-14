@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,6 +22,7 @@ public class Activity_43_46 extends Activity {
     String choice = "";
     String choice1 = "";
     String choice2 = "";
+    String choice3 = "";
     String pin="";
     String data;
     EditText pinn;
@@ -57,8 +59,10 @@ public class Activity_43_46 extends Activity {
 
                 saveChoice();
                 pin = pinn.getText().toString();
-                data = data + "#" + choice + "#" + choice1+"#" +pin+"#"+ choice2;
+                data = data + "#" + choice + "#" + choice1+"#" +choice2+"#"+ choice3;
                 Toast.makeText(Activity_43_46.this, data, Toast.LENGTH_SHORT).show();
+                Log.d("data", data);
+
                 Intent i = new Intent(Activity_43_46.this, Activity_47_50.class);
                 i.putExtra("data", data);
                 startActivity(i);
@@ -70,6 +74,7 @@ public class Activity_43_46 extends Activity {
         int id = radiogrp.getCheckedRadioButtonId();
         int id1=radiogrp1.getCheckedRadioButtonId();
         int id2=radiogrp2.getCheckedRadioButtonId();
+
         switch(id) {
             case R.id.radiobutton1_43:
                 choice = "1";
@@ -100,14 +105,20 @@ public class Activity_43_46 extends Activity {
             case R.id.no44:
                 choice1 = "2";
                 break;
+            case R.id.yes45:
+                choice2 = "1";
+                break;
+            case R.id.no45:
+                choice2 = "2";
+                break;
         }
 
         switch(id2) {
             case R.id.yes46:
-                choice2 = "1";
+                choice3 = "1";
                 break;
             case R.id.no46:
-                choice2 = "2";
+                choice3 = "2";
                 break;
         }
 
