@@ -41,7 +41,6 @@
                     android:id="@+id/answer1A_act7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="Less than 12"
                     android:textColor="#000000" />
 
@@ -96,7 +95,6 @@
                     android:id="@+id/answer2A_act7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="Less than 12"
                     android:textColor="#000000" />
 

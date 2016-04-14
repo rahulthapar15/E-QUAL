@@ -41,7 +41,6 @@
                     android:id="@+id/answer1A_act8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="Service"
                     android:textColor="#000000" />
 
@@ -89,7 +88,6 @@
                     android:id="@+id/answer2A_act8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="Service"
                     android:textColor="#000000" />
 

@@ -55,8 +55,6 @@ public class Activity_55 extends Activity {
                 saveChoice();
                 pin = pinn.getText().toString();
                 pin1 = pinn1.getText().toString();
-                Log.d("editect", pin);
-                Log.d("editect1", pin1);
                 data = data + "#" + choice + "#" + pin + "#" + pin1 + "#" + choice1;
                 Toast.makeText(Activity_55.this, data, Toast.LENGTH_SHORT).show();
                 try {

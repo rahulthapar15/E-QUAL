@@ -1,5 +1,6 @@
 package com.example.rahulthapar.e_qual;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,7 +13,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class Activity_54 extends AppCompatActivity {
+public class Activity_54 extends Activity {
     RadioButton fifty4_1,fifty4_2,fifty4_3,fifty4_4,fifty4_5;
     Button cont;
     private RadioGroup radiogrp;

@@ -41,7 +41,6 @@
                     android:id="@+id/answer1A_act5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="1st Year"
                     android:textColor="#000000" />
 
@@ -97,7 +96,6 @@
                     android:id="@+id/answer2A_act5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="Science"
                     android:textColor="#000000" />
 

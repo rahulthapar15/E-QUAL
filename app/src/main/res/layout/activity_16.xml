@@ -41,7 +41,6 @@
                     android:id="@+id/answer1A_act16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="Provide by the University"
                     android:textColor="#000000" />
 
@@ -90,7 +89,6 @@
                     android:id="@+id/answer2A_act16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="Yes"
                     android:textColor="#000000" />
 

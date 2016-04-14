@@ -41,7 +41,6 @@
                     android:id="@+id/answer1A_act17"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="Smart Phone"
                     android:textColor="#000000" />
 
@@ -85,7 +84,6 @@
                     android:id="@+id/answer2A_act17"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:checked="true"
                     android:text="Yes"
                     android:textColor="#000000" />
 

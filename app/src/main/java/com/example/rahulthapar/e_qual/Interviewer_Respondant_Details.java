@@ -1,5 +1,6 @@
 package com.example.rahulthapar.e_qual;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +17,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Interviewer_Respondant_Details extends AppCompatActivity {
+public class Interviewer_Respondant_Details extends Activity {
 
     EditText interviewerID, respondantName, respondantID, contactNO, age;
     Button save_next_interviewer_respondant_details;
