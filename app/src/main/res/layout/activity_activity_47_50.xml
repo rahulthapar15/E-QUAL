@@ -32,7 +32,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="If yes to Q47, then from where?"
+            android:text="If yes, then from where?"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/tv4_48"/>
         <EditText
@@ -53,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="If yes to Q47, then did you like the idea of online course? "
+            android:text="If you have taken any online course, then did you like the idea of online course ?"
             android:id="@+id/tv1_49"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -81,7 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="If yes to Q47, then how useful was the online course? "
+            android:text="if you have taken any online course, then how useful was the online course"
             android:id="@+id/tv1_50"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"

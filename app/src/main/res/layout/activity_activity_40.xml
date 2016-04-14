@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text=". If yes to above question, do you think the course was better because of the online material? "
+                android:text="If yes to above question, do you think the course was better because of the online material? "
                 android:id="@+id/tv3_42"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"

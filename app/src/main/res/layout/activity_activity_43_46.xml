@@ -98,7 +98,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="If yes to Q44, do you think an online course (MOOC) can be a substitute for a traditional course (only through contact)?"
+            android:text="If yes in the above question, do you think an online course (MOOC) can be a substitute for a traditional course (only through contact)?"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/tv4_45"/>
         <EditText

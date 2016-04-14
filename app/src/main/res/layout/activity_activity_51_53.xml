@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="If yes to Q47, was the online course was free? "
+            android:text="If you have taken any online course, was the online course was free? "
             android:id="@+id/tv1_51"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="If yes to Q51, will you be willing to pay for an online course? "
+            android:text="If yes in the above question, will you be willing to pay for an online course? "
             android:id="@+id/tv1_52"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -61,7 +61,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="If no to Q 51 (i.e., question was the online course was free), how much did you pay? "
+            android:text="If no in the above question (i.e., question was the online course was free), how much did you pay? "
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/tv4_53"/>
         <EditText
