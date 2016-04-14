@@ -81,7 +81,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="150dp"
-            android:text="CONTINUE"
+            android:text="NEXT"
             android:background="@color/colorPrimary"
             android:id="@+id/save_next_interviewer_respondant_details"/>
 
