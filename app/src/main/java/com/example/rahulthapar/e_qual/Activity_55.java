@@ -59,6 +59,8 @@ public class Activity_55 extends Activity {
                 Toast.makeText(Activity_55.this, data, Toast.LENGTH_SHORT).show();
                 try {
                     saveFile();
+                    Intent i = new Intent(Activity_55.this,ThankYou.class);
+                    startActivity(i);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
