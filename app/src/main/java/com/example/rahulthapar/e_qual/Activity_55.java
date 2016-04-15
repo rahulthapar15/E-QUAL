@@ -28,9 +28,9 @@ public class Activity_55 extends Activity {
     private RadioGroup radiogrp,radiogrp1;
     String choice = "";
     String choice1 = "";
+    String choice2="";
+    String choice3="";
     String data;
-    EditText pinn,pinn1;
-    String pin="",pin1="";
     private FileWriter mFileWriter;
 
     @Override
@@ -45,17 +45,14 @@ public class Activity_55 extends Activity {
         fifty8_3 = (RadioButton)findViewById(R.id.radiobutton3_55);
         cont = (Button)findViewById(R.id.save_next_act55);
         cancel = (Button)findViewById(R.id.cancel_55);
-        pinn = (EditText)findViewById(R.id.edit1_55);
-        pinn1 = (EditText)findViewById(R.id.edit2_55);
+
         radiogrp  = (RadioGroup)findViewById(R.id.radiogroup55);
         radiogrp1  = (RadioGroup)findViewById(R.id.radiogroup58);
         cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 saveChoice();
-                pin = pinn.getText().toString();
-                pin1 = pinn1.getText().toString();
-                data = data + "#" + choice + "#" + pin + "#" + pin1 + "#" + choice1;
+                data = data + "#" + choice + "#" + choice2 + "#" + choice3 + "#" + choice1;
                 Toast.makeText(Activity_55.this, data, Toast.LENGTH_SHORT).show();
                 try {
                     saveFile();
@@ -79,7 +76,7 @@ public class Activity_55 extends Activity {
         String[] row=data.split("#");
         String[] ques={"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22",
                 "23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40",
-                "41","42","43","44","45","46","47","48","49","50","51","52","53","54","55"};
+                "41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58"};
         String baseDir = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
         String fileName = "E-Qual.csv";
         String filePath = baseDir + File.separator + fileName;
@@ -110,6 +107,19 @@ public class Activity_55 extends Activity {
                 break;
             case R.id.no55:
                 choice = "2";
+                break;
+            case R.id.yes56:
+                choice2 = "1";
+                break;
+
+            case R.id.no56:
+                choice2 = "2";
+                break;
+            case R.id.yes57:
+                choice3 = "1";
+                break;
+            case R.id.no57:
+                choice3 = "2";
                 break;
         }
         switch(id1) {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rahulthapar.e_qual">
+    package="com.example.rahulthapar.e_qual" >
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -10,8 +10,8 @@
         android:icon="@mipmap/eu_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/AppTheme" >
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,23 +36,31 @@
         <activity android:name=".Activity17" />
         <activity
             android:name=".Activity_40"
-            android:label="@string/title_activity_activity_40"></activity>
+            android:label="@string/title_activity_activity_40" />
         <activity
             android:name=".Activity_43_46"
-            android:label="@string/title_activity_activity_43_46"></activity>
+            android:label="@string/title_activity_activity_43_46" />
         <activity
             android:name=".Activity_47_50"
-            android:label="@string/title_activity_activity_47_50"></activity>
+            android:label="@string/title_activity_activity_47_50" />
         <activity
             android:name=".Activity_51_53"
-            android:label="@string/title_activity_activity_51_53"></activity>
+            android:label="@string/title_activity_activity_51_53" />
         <activity
             android:name=".Activity_54"
-            android:label="@string/title_activity_activity_54"></activity>
+            android:label="@string/title_activity_activity_54" />
         <activity
             android:name=".Activity_55"
-            android:label="@string/title_activity_activity_55"></activity>
-        <activity android:name=".ThankYou"></activity>
+            android:label="@string/title_activity_activity_55" />
+        <activity android:name=".ThankYou" />
+        <activity
+            android:name=".Activity_54_2"
+            android:label="@string/title_activity_activity_54_2" >
+        </activity>
+        <activity
+            android:name=".Activity_54_3"
+            android:label="@string/title_activity_activity_54_3" >
+        </activity>
     </application>
 
 </manifest>
