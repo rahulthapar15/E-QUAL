@@ -52,7 +52,8 @@ public class Activity_47_50 extends Activity {
                 saveChoice();
                 pin = pinn.getText().toString();
                 data = data + "#" + choice + "#" + pin + "#" + choice1 + "#" + choice2;
-                Toast.makeText(Activity_47_50.this, data, Toast.LENGTH_SHORT).show();
+                Log.d("data", data);
+                //Toast.makeText(Activity_47_50.this, data, Toast.LENGTH_SHORT).show();
                 Log.d("data", data);
 
                 Intent i = new Intent(Activity_47_50.this, Activity_51_53.class);

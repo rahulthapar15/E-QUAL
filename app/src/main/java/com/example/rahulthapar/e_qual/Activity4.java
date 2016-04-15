@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -43,9 +44,10 @@ public class Activity4 extends Activity {
             public void onClick(View v) {
                 saveChoice();
 
-                data = data + "#"+ choice  + "#" + major.getText().toString();
+                data = data + "#" + choice  + "#" + major.getText().toString();
                 Intent i = new Intent(Activity4.this,Activity5.class);
-                Toast.makeText(Activity4.this, data, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Activity4.this, data, Toast.LENGTH_SHORT).show();
+                Log.d("data", data);
 
                 i.putExtra("data", data);
                 startActivity(i);

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -51,7 +52,8 @@ public class Activity_40 extends Activity {
 
                 saveChoice();
                 data = data + "#" + choice + "#" + choice1+"#" + choice2;
-                Toast.makeText(Activity_40.this, data, Toast.LENGTH_SHORT).show();
+                Log.d("data", data);
+                //Toast.makeText(Activity_40.this, data, Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(Activity_40.this, Activity_43_46.class);
                 i.putExtra("data", data);
                 startActivity(i);

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -44,7 +45,8 @@ public class Activity10 extends Activity {
                 saveChoice2();
 
                 data = data + "#"+ choice1 + "#" + choice2 ;
-                Toast.makeText(Activity10.this, data, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Activity10.this, data, Toast.LENGTH_SHORT).show();
+                Log.d("data", data);
 
                 Intent i = new Intent(Activity10.this,Activity11.class);
                 i.putExtra("data", data);

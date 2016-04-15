@@ -32,28 +32,6 @@ public class Interviewer_Respondant_Details extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interviewer__respondant__details);
 
-        /*try {
-            String csv = android.os.Environment.getExternalStorageDirectory().getAbsolutePath()+"/E-QUAL.csv";
-
-            Log.d("hi", "hello");
-
-            writer = new CSVWriter(new FileWriter(csv, true));
-
-            reader = new CSVReader(new FileReader(csv));
-
-            if(reader.readNext() == null) {
-                String[] entries = ("interviewer id#respondant name#respondant ID#contact no#age#where do you reside#house address pin#aug#sep#oct#nov#dec").split("#"); // array of your values
-                writer.writeNext(entries);
-            }
-
-            writer.close();
-            reader.close();
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-
         interviewerID = (EditText)findViewById(R.id.interviewerID);
         respondantName = (EditText)findViewById(R.id.respondantName);
         respondantID = (EditText)findViewById(R.id.respondantID);

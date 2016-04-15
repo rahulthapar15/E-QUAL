@@ -23,9 +23,7 @@ public class Activity_43_46 extends Activity {
     String choice1 = "";
     String choice2 = "";
     String choice3 = "";
-    String pin="";
     String data;
-    EditText pinn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +43,9 @@ public class Activity_43_46 extends Activity {
 
         fourty4_1 = (RadioButton)findViewById(R.id.yes44);
         fourty4_2 = (RadioButton)findViewById(R.id.no44);
-<<<<<<< Updated upstream
-=======
         fourty5_1 = (RadioButton)findViewById(R.id.yes45);
         fourty5_2 = (RadioButton)findViewById(R.id.no45);
 
->>>>>>> Stashed changes
         fourty6_1 = (RadioButton)findViewById(R.id.yes46);
         fourty6_2 = (RadioButton)findViewById(R.id.yes46);
 
@@ -65,7 +60,8 @@ public class Activity_43_46 extends Activity {
 
                 saveChoice();
                 data = data + "#" + choice + "#" + choice1+"#" +choice2+"#"+ choice3;
-                Toast.makeText(Activity_43_46.this, data, Toast.LENGTH_SHORT).show();
+                Log.d("data", data);
+                //Toast.makeText(Activity_43_46.this, data, Toast.LENGTH_SHORT).show();
                 Log.d("data", data);
 
                 Intent i = new Intent(Activity_43_46.this, Activity_47_50.class);

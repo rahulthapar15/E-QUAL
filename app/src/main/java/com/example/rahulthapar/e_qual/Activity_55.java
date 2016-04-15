@@ -65,7 +65,8 @@ public class Activity_55 extends Activity {
             public void onClick(View v) {
                 saveChoice();
                 data = data + "#" + choice + "#" + choice1 + "#" + choice2 + "#" + choice3;
-                Toast.makeText(Activity_55.this, data, Toast.LENGTH_SHORT).show();
+                Log.d("data", data);
+                //Toast.makeText(Activity_55.this, data, Toast.LENGTH_SHORT).show();
                 //Toast.makeText(Activity_55.this, data, Toast.LENGTH_SHORT).show();
                 try {
                     saveFile();
@@ -80,7 +81,7 @@ public class Activity_55 extends Activity {
             @Override
             public void onClick(View v) {
                 data = null;
-                Toast.makeText(Activity_55.this, data, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Activity_55.this, data, Toast.LENGTH_SHORT).show();
                 Intent i = new Intent(Activity_55.this, MainActivity.class);
                 startActivity(i);
             }
@@ -88,12 +89,16 @@ public class Activity_55 extends Activity {
     }
 
     private void saveFile() throws IOException {
-        String[] row=data.split("#");
+
+        String[] row = data.split("#");
+
         for(int i = 0; i < row.length; i++)
             Log.d(""+i, row[i]);
-        String[] ques={"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22",
+
+        String[] ques={"1","2","3","4","5","6","7","8","9","10","11","12","13","13a","14","15","16","17","18","19","20","21","22",
                 "23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40",
                 "41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58"};
+
         String baseDir = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
         String fileName = "E-Qual.csv";
         String filePath = baseDir + File.separator + fileName;
@@ -130,7 +135,7 @@ public class Activity_55 extends Activity {
                 choice = "2";
                 break;
         }
-        switch (id2) {
+        switch (id1) {
             case R.id.yes56:
                 choice1 = "1";
                 break;
@@ -139,7 +144,7 @@ public class Activity_55 extends Activity {
                 choice1 = "2";
                 break;
         }
-        switch (id3){
+        switch (id2){
             case R.id.yes57:
                 choice2 = "1";
                 break;
@@ -147,7 +152,7 @@ public class Activity_55 extends Activity {
                 choice2 = "2";
                 break;
         }
-        switch(id1) {
+        switch(id3) {
             case R.id.radiobutton1_55:
                 choice3 = "1";
                 break;
