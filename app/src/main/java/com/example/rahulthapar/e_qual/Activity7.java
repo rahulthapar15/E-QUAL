@@ -43,7 +43,7 @@ public class Activity7 extends Activity {
                 saveChoice();
                 saveChoice2();
                 data = data + "#"+ choice1 + "#" + choice2;
-                Toast.makeText(Activity7.this, data, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Activity7.this, data, Toast.LENGTH_SHORT).show();
 
                 Intent i = new Intent(Activity7.this,Activity8.class);
                 i.putExtra("data", data);

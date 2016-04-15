@@ -16,9 +16,9 @@ import android.widget.Toast;
 
 public class Activity_43_46 extends Activity {
 
-    RadioButton fourty3_1,fourty3_2,fourty3_3,fourty3_4,fourty3_5,fourty3_6,fourty3_7,fourty4_1,fourty4_2,fourty6_1,fourty6_2;
+    RadioButton fourty3_1,fourty3_2,fourty3_3,fourty3_4,fourty3_5,fourty3_6,fourty3_7,fourty4_1,fourty4_2,fourty6_1,fourty6_2, fourty5_1, fourty5_2;
     Button cont;
-    private RadioGroup radiogrp,radiogrp1,radiogrp2;
+    private RadioGroup radiogrp,radiogrp1,radiogrp2, radiogrp3;
     String choice = "";
     String choice1 = "";
     String choice2 = "";
@@ -45,13 +45,20 @@ public class Activity_43_46 extends Activity {
 
         fourty4_1 = (RadioButton)findViewById(R.id.yes44);
         fourty4_2 = (RadioButton)findViewById(R.id.no44);
+<<<<<<< Updated upstream
+=======
+        fourty5_1 = (RadioButton)findViewById(R.id.yes45);
+        fourty5_2 = (RadioButton)findViewById(R.id.no45);
+
+>>>>>>> Stashed changes
         fourty6_1 = (RadioButton)findViewById(R.id.yes46);
         fourty6_2 = (RadioButton)findViewById(R.id.yes46);
 
         cont = (Button)findViewById(R.id.save_next_act47);
         radiogrp  = (RadioGroup)findViewById(R.id.radiogroup43);
         radiogrp1  = (RadioGroup)findViewById(R.id.radiogroup44);
-        radiogrp2  = (RadioGroup)findViewById(R.id.radiogroup46);
+        radiogrp2  = (RadioGroup)findViewById(R.id.radiogroup45);
+        radiogrp3 = (RadioGroup) findViewById(R.id.radiogroup46);
         cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,8 +77,9 @@ public class Activity_43_46 extends Activity {
 
     public void saveChoice(){
         int id = radiogrp.getCheckedRadioButtonId();
-        int id1=radiogrp1.getCheckedRadioButtonId();
-        int id2=radiogrp2.getCheckedRadioButtonId();
+        int id1 = radiogrp1.getCheckedRadioButtonId();
+        int id2 = radiogrp2.getCheckedRadioButtonId();
+        int id3 = radiogrp3.getCheckedRadioButtonId();
 
         switch(id) {
             case R.id.radiobutton1_43:
@@ -103,15 +111,20 @@ public class Activity_43_46 extends Activity {
             case R.id.no44:
                 choice1 = "2";
                 break;
+
+        }
+
+        switch(id2) {
             case R.id.yes45:
                 choice2 = "1";
                 break;
             case R.id.no45:
                 choice2 = "2";
                 break;
+
         }
 
-        switch(id2) {
+        switch(id3) {
             case R.id.yes46:
                 choice3 = "1";
                 break;

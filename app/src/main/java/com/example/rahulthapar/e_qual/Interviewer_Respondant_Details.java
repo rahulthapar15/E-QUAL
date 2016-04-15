@@ -81,7 +81,7 @@ public class Interviewer_Respondant_Details extends Activity {
 
 
                 Intent i = new Intent(Interviewer_Respondant_Details.this,Activity3.class);
-                Toast.makeText(Interviewer_Respondant_Details.this, data, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Interviewer_Respondant_Details.this, data, Toast.LENGTH_SHORT).show();
 
                 i.putExtra("data", data);
                 startActivity(i);

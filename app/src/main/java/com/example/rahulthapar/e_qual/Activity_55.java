@@ -23,7 +23,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class Activity_55 extends Activity {
-    RadioButton fifty5_1,fifty5_2,fifty8_1,fifty8_2,fifty8_3;
+    RadioButton fifty5_1,fifty5_2,fifty6_1,fifty6_2,fifty7_1,fifty7_2, fifty8_1,fifty8_2,fifty8_3, fifty8_4;
     Button cont,cancel;
     private RadioGroup radiogrp,radiogrp1,radiogrp2,radiogrp3;
     String choice = "";
@@ -40,22 +40,33 @@ public class Activity_55 extends Activity {
         setContentView(R.layout.activity_activity_55);
         fifty5_1 = (RadioButton)findViewById(R.id.yes55);
         fifty5_2 = (RadioButton)findViewById(R.id.no55);
+
+        fifty6_1 = (RadioButton)findViewById(R.id.yes56);
+        fifty6_2 = (RadioButton)findViewById(R.id.no56);
+
+        fifty7_1 = (RadioButton)findViewById(R.id.yes57);
+        fifty7_2 = (RadioButton)findViewById(R.id.no57);
+
         fifty8_1 = (RadioButton)findViewById(R.id.radiobutton1_55);
         fifty8_2 = (RadioButton)findViewById(R.id.radiobutton2_55);
         fifty8_3 = (RadioButton)findViewById(R.id.radiobutton3_55);
+        fifty8_4 = (RadioButton)findViewById(R.id.radiobutton4_55);
+
         cont = (Button)findViewById(R.id.save_next_act55);
         cancel = (Button)findViewById(R.id.cancel_55);
 
         radiogrp  = (RadioGroup)findViewById(R.id.radiogroup55);
-        radiogrp2  = (RadioGroup)findViewById(R.id.radiogroup56);
-        radiogrp3  = (RadioGroup)findViewById(R.id.radiogroup57);
-        radiogrp1  = (RadioGroup)findViewById(R.id.radiogroup58);
+        radiogrp1  = (RadioGroup)findViewById(R.id.radiogroup56);
+        radiogrp2  = (RadioGroup)findViewById(R.id.radiogroup57);
+        radiogrp3  = (RadioGroup)findViewById(R.id.radiogroup58);
+
         cont.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 saveChoice();
-                data = data + "#" + choice + "#" + choice2 + "#" + choice3 + "#" + choice1;
+                data = data + "#" + choice + "#" + choice1 + "#" + choice2 + "#" + choice3;
                 Toast.makeText(Activity_55.this, data, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Activity_55.this, data, Toast.LENGTH_SHORT).show();
                 try {
                     saveFile();
                     Intent i = new Intent(Activity_55.this,ThankYou.class);
@@ -110,6 +121,7 @@ public class Activity_55 extends Activity {
         int id2 = radiogrp2.getCheckedRadioButtonId();
         int id3 = radiogrp3.getCheckedRadioButtonId();
 
+
         switch(id) {
             case R.id.yes55:
                 choice = "1";
@@ -120,31 +132,35 @@ public class Activity_55 extends Activity {
         }
         switch (id2) {
             case R.id.yes56:
-                choice2 = "1";
+                choice1 = "1";
                 break;
 
             case R.id.no56:
-                choice2 = "2";
+                choice1 = "2";
                 break;
         }
         switch (id3){
             case R.id.yes57:
-                choice3 = "1";
+                choice2 = "1";
                 break;
             case R.id.no57:
-                choice3 = "2";
+                choice2 = "2";
                 break;
         }
         switch(id1) {
             case R.id.radiobutton1_55:
-                choice1 = "1";
+                choice3 = "1";
                 break;
             case R.id.radiobutton2_55:
-                choice1 = "2";
+                choice3 = "2";
                 break;
             case R.id.radiobutton3_55:
-                choice1 = "3";
+                choice3 = "3";
                 break;
+            case R.id.radiobutton4_55:
+                choice3 = "3";
+                break;
+
         }
     }
 }
