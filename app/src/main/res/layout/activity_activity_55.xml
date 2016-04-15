@@ -37,6 +37,15 @@
             android:layout_height="wrap_content"
             android:text="No"
             android:id="@+id/no55"/>
+        </RadioGroup>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radiogroup56"
+            android:layout_below="@+id/radiogroup55"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,7 +62,15 @@
             android:layout_height="wrap_content"
             android:text="No"
             android:id="@+id/no56"/>
-
+</RadioGroup>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radiogroup57"
+            android:layout_below="@+id/radiogroup56"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
         <TextView
             android:layout_width="match_parent"
@@ -77,7 +94,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/radiogroup58"
-        android:layout_below="@+id/radiogroup55"
+        android:layout_below="@+id/radiogroup57"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
         <TextView
@@ -112,6 +129,7 @@
             android:layout_height="wrap_content"
             android:text="FINSIH"
             android:layout_alignParentBottom="true"
+            android:layout_below="@+id/radiogroup58"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:id="@+id/save_next_act55"
@@ -126,26 +144,10 @@
         android:layout_gravity="end"
         android:background="@color/colorPrimary"
         android:layout_alignParentBottom="true"
-<<<<<<< HEAD
         android:layout_alignRight="@+id/radiogroup58"
         android:layout_alignEnd="@+id/radiogroup58" />
-=======
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:textColor="@color/bright_foreground_disabled_material_dark"/>
-
-    <Button
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="FINSIH"
-        android:id="@+id/save_next_act55"
-        android:layout_gravity="end"
-        android:background="@color/colorPrimary"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/radiogroup58"
-        android:layout_alignEnd="@+id/radiogroup58"
-        android:textColor="@color/bright_foreground_disabled_material_dark"/>
->>>>>>> origin/master
-
 </RelativeLayout>
     </ScrollView>

@@ -25,7 +25,7 @@ import java.util.ArrayList;
 public class Activity_55 extends Activity {
     RadioButton fifty5_1,fifty5_2,fifty8_1,fifty8_2,fifty8_3;
     Button cont,cancel;
-    private RadioGroup radiogrp,radiogrp1;
+    private RadioGroup radiogrp,radiogrp1,radiogrp2,radiogrp3;
     String choice = "";
     String choice1 = "";
     String choice2="";
@@ -47,6 +47,8 @@ public class Activity_55 extends Activity {
         cancel = (Button)findViewById(R.id.cancel_55);
 
         radiogrp  = (RadioGroup)findViewById(R.id.radiogroup55);
+        radiogrp2  = (RadioGroup)findViewById(R.id.radiogroup56);
+        radiogrp3  = (RadioGroup)findViewById(R.id.radiogroup57);
         radiogrp1  = (RadioGroup)findViewById(R.id.radiogroup58);
         cont.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -105,6 +107,9 @@ public class Activity_55 extends Activity {
     public void saveChoice(){
         int id = radiogrp.getCheckedRadioButtonId();
         int id1 = radiogrp1.getCheckedRadioButtonId();
+        int id2 = radiogrp2.getCheckedRadioButtonId();
+        int id3 = radiogrp3.getCheckedRadioButtonId();
+
         switch(id) {
             case R.id.yes55:
                 choice = "1";
@@ -112,6 +117,8 @@ public class Activity_55 extends Activity {
             case R.id.no55:
                 choice = "2";
                 break;
+        }
+        switch (id2) {
             case R.id.yes56:
                 choice2 = "1";
                 break;
@@ -119,6 +126,8 @@ public class Activity_55 extends Activity {
             case R.id.no56:
                 choice2 = "2";
                 break;
+        }
+        switch (id3){
             case R.id.yes57:
                 choice3 = "1";
                 break;
@@ -128,13 +137,13 @@ public class Activity_55 extends Activity {
         }
         switch(id1) {
             case R.id.radiobutton1_55:
-                choice = "1";
+                choice1 = "1";
                 break;
             case R.id.radiobutton2_55:
-                choice = "2";
+                choice1 = "2";
                 break;
             case R.id.radiobutton3_55:
-                choice = "3";
+                choice1 = "3";
                 break;
         }
     }

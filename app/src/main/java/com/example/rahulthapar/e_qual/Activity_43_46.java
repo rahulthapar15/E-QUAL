@@ -45,7 +45,6 @@ public class Activity_43_46 extends Activity {
 
         fourty4_1 = (RadioButton)findViewById(R.id.yes44);
         fourty4_2 = (RadioButton)findViewById(R.id.no44);
-        pinn = (EditText)findViewById(R.id.edit_45);
         fourty6_1 = (RadioButton)findViewById(R.id.yes46);
         fourty6_2 = (RadioButton)findViewById(R.id.yes46);
 
@@ -58,7 +57,6 @@ public class Activity_43_46 extends Activity {
             public void onClick(View v) {
 
                 saveChoice();
-                pin = pinn.getText().toString();
                 data = data + "#" + choice + "#" + choice1+"#" +choice2+"#"+ choice3;
                 Toast.makeText(Activity_43_46.this, data, Toast.LENGTH_SHORT).show();
                 Log.d("data", data);
