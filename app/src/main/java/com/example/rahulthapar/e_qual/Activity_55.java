@@ -158,7 +158,7 @@ public class Activity_55 extends Activity {
                 choice3 = "3";
                 break;
             case R.id.radiobutton4_55:
-                choice3 = "3";
+                choice3 = "4";
                 break;
 
         }
