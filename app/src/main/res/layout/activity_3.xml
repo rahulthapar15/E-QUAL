@@ -54,7 +54,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Home Address Pin Code"
+        android:text="Pin code of permanant residence"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:layout_marginTop="180dp"
         android:id="@+id/textpin"/>

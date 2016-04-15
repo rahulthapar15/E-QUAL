@@ -101,11 +101,18 @@
             android:text="If yes in the above question, do you think an online course (MOOC) can be a substitute for a traditional course (only through contact)?"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/tv4_45"/>
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberSigned"
-            android:id="@+id/edit_45"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:id="@+id/yes45"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:id="@+id/no45"/>
+
         </RadioGroup>
         <RadioGroup
             android:layout_width="match_parent"

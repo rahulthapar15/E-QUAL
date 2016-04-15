@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -50,8 +51,10 @@ public class Activity_47_50 extends Activity {
 
                 saveChoice();
                 pin = pinn.getText().toString();
-                data = data + "#" + choice+"#" +pin + "#" + choice1+"#"+ choice2;
+                data = data + "#" + choice + "#" + pin + "#" + choice1 + "#" + choice2;
                 Toast.makeText(Activity_47_50.this, data, Toast.LENGTH_SHORT).show();
+                Log.d("data", data);
+
                 Intent i = new Intent(Activity_47_50.this, Activity_51_53.class);
                 i.putExtra("data", data);
                 startActivity(i);
@@ -82,13 +85,13 @@ public class Activity_47_50 extends Activity {
 
         switch(id2) {
             case R.id.radiobutton1_50:
-                choice = "1";
+                choice2 = "1";
                 break;
             case R.id.radiobutton2_50:
-                choice = "2";
+                choice2 = "2";
                 break;
             case R.id.radiobutton3_50:
-                choice = "3";
+                choice2 = "3";
                 break;
         }
 

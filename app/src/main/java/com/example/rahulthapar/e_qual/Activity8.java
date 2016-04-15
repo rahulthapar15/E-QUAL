@@ -14,7 +14,7 @@ public class Activity8 extends Activity {
 
     Button save_next_act8;
     RadioGroup radio1, radio2;
-    RadioButton a1, b1,c1,a2,b2,c2;
+    RadioButton a1, b1,c1,d1,a2,b2,c2,d2;
     String data, choice1, choice2;
 
     @Override
@@ -30,11 +30,13 @@ public class Activity8 extends Activity {
         a1 = (RadioButton) findViewById(R.id.answer1A_act8);
         b1 = (RadioButton) findViewById(R.id.answer1B_act8);
         c1 = (RadioButton) findViewById(R.id.answer1C_act8);
+        d1 = (RadioButton) findViewById(R.id.answer1D_act8);
 
         a2 = (RadioButton) findViewById(R.id.answer2A_act8);
         b2 = (RadioButton) findViewById(R.id.answer2B_act8);
         c2 = (RadioButton) findViewById(R.id.answer2C_act8);
-        
+        d2 = (RadioButton) findViewById(R.id.answer2D_act8);
+
         save_next_act8 = (Button)findViewById(R.id.save_next_act8);
         save_next_act8.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +69,11 @@ public class Activity8 extends Activity {
                 choice1 = "3";
                 break;
 
+            case R.id.answer1D_act8:
+
+                choice1 = "4";
+                break;
+
             
         }
 
@@ -88,7 +95,10 @@ public class Activity8 extends Activity {
                 choice2 = "3";
                 break;
 
-         
+            case R.id.answer2D_act8:
+
+                choice1 = "4";
+                break;
         }
 
     }
