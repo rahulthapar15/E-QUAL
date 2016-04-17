@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Quantitative Study to the position of computer based education in India"
+        android:text="EQUAL-SNU study on E-Learning"
         android:id="@+id/textView"
         android:textColor="@color/colorAccent"
         android:layout_alignParentTop="true"
