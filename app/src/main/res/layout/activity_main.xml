@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.rahulthapar.e_qual.MainActivity"
-    android:background="#0a0909">
+    android:drawable="@color/abc_background_cache_hint_selector_material_light">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="EQUAL-SNU study on E-Learning"
         android:id="@+id/textView"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/abc_input_method_navigation_guard"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -26,7 +26,7 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="“The data collected in this survey will be only used for research purpose. Identity of the student will not be revealed to anyone. If the data is made available in the public domain then identity of the students will remain anonymous.” "
         android:id="@+id/textView2"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/abc_input_method_navigation_guard"
         android:layout_marginTop="38dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
@@ -40,5 +40,15 @@
         android:text="START"
         android:id="@+id/start"
         android:background="@color/colorPrimary"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="75dp"
+        android:src="@drawable/logo"
+        />
 
 </RelativeLayout>
